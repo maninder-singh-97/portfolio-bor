@@ -1,17 +1,50 @@
-/* Light Background */
+/* Base Layout */
 body {
     background-color: #ffffff;
     color: #1a1a1a;
     font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.background-alt {
+    background-color: #f2f7ff;
 }
 
 /* Headings with Blue Glow */
 h1, h2, h3, h4, h5, h6 {
     color: #003366;
     text-shadow: 0 0 6px rgba(0, 140, 255, 0.4);
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-/* Links with Glow */
+/* Section Headings */
+.heading {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Navbar and Header Menu */
+#menu li a {
+    color: #003366;
+    font-weight: 600;
+    text-shadow: 0 0 4px rgba(0, 140, 255, 0.4);
+}
+
+#menu li a:hover {
+    color: #007bff;
+}
+
+/* Links */
 a, a:visited {
     color: #007bff;
     text-decoration: none;
@@ -40,25 +73,62 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 140, 255, 0.6);
 }
 
-/* Project Cards */
-.project {
+/* Project & Certification Cards */
+.project,
+.certification {
     background-color: #f8f9fa;
     box-shadow: 0 0 10px rgba(0, 140, 255, 0.2);
     border-radius: 8px;
     margin-bottom: 30px;
     padding: 20px;
+    transition: transform 0.2s ease;
 }
 
-/* Skills List */
+.project:hover,
+.certification:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 140, 255, 0.4);
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
 #skills h4 {
     margin-bottom: 10px;
     font-weight: bold;
-    color: #337ab7; /* Optional: blue tone */
+    color: #337ab7;
 }
 
 #skills ul {
     list-style-type: disc;
     padding-left: 20px;
+}
+
+#skills li {
+    margin-bottom: 5px;
+}
+
+/* Timeline Pins */
+#experience-timeline::before {
+    background-color: #007bff;
+}
+
+#experience-timeline div::before {
+    background-color: #007bff;
+    border: 2px solid #fff;
+}
+
+/* Education */
+.education-block {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #eef4ff;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
 }
 
 /* Contact Form */
@@ -99,4 +169,12 @@ footer .social i {
 footer .social i:hover {
     color: #0056b3;
     text-shadow: 0 0 8px rgba(0, 140, 255, 0.8);
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
 }
