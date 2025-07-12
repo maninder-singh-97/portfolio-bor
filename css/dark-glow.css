@@ -50,21 +50,15 @@ a:hover {
 }
 
 /* Skills List */
-#skills ul {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
+#skills h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #337ab7; /* Optional: blue tone */
 }
 
-#skills li {
-    background-color: #e9f5ff;
-    color: #0056b3;
-    border: 1px solid #007bff;
-    border-radius: 20px;
-    padding: 8px 16px;
-    margin: 5px;
-    text-shadow: 0 0 4px rgba(0, 140, 255, 0.4);
+#skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* Contact Form */
