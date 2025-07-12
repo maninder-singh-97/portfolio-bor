@@ -15,7 +15,7 @@ body {
     background-color: #f2f7ff;
 }
 
-/* Contact Info Section (Under Title) */
+
 .contact-info {
     margin: 15px 0 25px 0;
     display: flex;
@@ -92,13 +92,14 @@ a:hover {
     border-radius: 25px;
     transition: 0.3s ease;
     font-weight: 600;
-    text-shadow: none;
+    text-shadow: none; /* Remove glow on white */
 }
 
 .btn-rounded-white:hover {
     background-color: #0056b3;
     box-shadow: 0 0 10px rgba(0, 140, 255, 0.6);
 }
+
 
 /* Project & Certification Cards */
 .project,
@@ -204,4 +205,15 @@ footer {
     padding: 20px 0;
     border-top: 1px solid #ddd;
     font-size: 14px;
+}
+
+.contact-item,
+.contact-item:visited {
+    color: #ffffff !important;
+    text-shadow: 0 0 4px rgba(0, 140, 255, 0.7);
+}
+
+.contact-item:hover {
+    color: #aad4ff !important;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 1);
 }
