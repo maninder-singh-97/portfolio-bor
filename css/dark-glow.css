@@ -1,92 +1,55 @@
-/* ========== Base ========== */
+/* Light Background */
 body {
-    background-color: #0d1117;
-    color: #e6f1ff;
+    background-color: #ffffff;
+    color: #1a1a1a;
     font-family: 'Lato', sans-serif;
 }
 
+/* Headings with Blue Glow */
+h1, h2, h3, h4, h5, h6 {
+    color: #003366;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 0.4);
+}
+
+/* Links with Glow */
 a, a:visited {
-    color: #00bcd4;
+    color: #007bff;
     text-decoration: none;
-    text-shadow: 0 0 5px #00bcd4;
+    text-shadow: 0 0 4px rgba(0, 140, 255, 0.5);
 }
 
 a:hover {
-    color: #1de9b6;
-    text-shadow: 0 0 8px #1de9b6;
+    color: #0056b3;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 0.8);
 }
 
-/* ========== Headings ========== */
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-    text-shadow: 0 0 8px #00bcd4;
-}
-
-/* ========== Section Backgrounds ========== */
-#lead,
-#about,
-#experience,
-#education,
-#projects,
-#skills,
-#contact,
-footer {
-    background-color: #0d1117;
-    color: #e6f1ff;
-}
-
-/* Overlay on lead */
-#lead-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-/* Lead heading */
-#lead h1, #lead h2 {
-    text-shadow: 0 0 10px #00bcd4;
-}
-
-/* Button Style */
+/* Resume Button */
 .btn-rounded-white {
-    border: 2px solid #00bcd4;
-    color: #00bcd4;
-    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    background: white;
     padding: 10px 25px;
     border-radius: 25px;
     transition: 0.3s ease;
-    text-shadow: 0 0 5px #00bcd4;
+    text-shadow: 0 0 4px rgba(0, 140, 255, 0.4);
 }
 
 .btn-rounded-white:hover {
-    background-color: #00bcd4;
-    color: #121212;
-    box-shadow: 0 0 10px #00bcd4;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.6);
 }
 
-/* Timeline (Experience) */
-#experience-timeline > div {
-    border-left: 2px solid #00bcd4;
-    padding-left: 20px;
-    margin-bottom: 30px;
-}
-
-/* Project Section */
+/* Project Cards */
 .project {
-    background-color: #161b22;
-    box-shadow: 0 0 12px #00bcd4;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.2);
     border-radius: 8px;
     margin-bottom: 30px;
+    padding: 20px;
 }
 
-.project-info h3 {
-    color: #ffffff;
-}
-
-.project-info a {
-    color: #00e6e6;
-    text-shadow: 0 0 5px #00e6e6;
-}
-
-/* Skills */
+/* Skills List */
 #skills ul {
     list-style: none;
     padding-left: 0;
@@ -95,54 +58,21 @@ footer {
 }
 
 #skills li {
-    background-color: #161b22;
-    color: #00bcd4;
-    text-shadow: 0 0 5px #00bcd4;
-    border: 1px solid #00bcd4;
-    border-radius: 15px;
+    background-color: #e9f5ff;
+    color: #0056b3;
+    border: 1px solid #007bff;
+    border-radius: 20px;
     padding: 8px 16px;
     margin: 5px;
-}
-
-/* Footer */
-footer {
-    background-color: #0d1117;
-    border-top: 1px solid #2d2d2d;
-}
-
-footer .social i {
-    color: #00bcd4;
-    text-shadow: 0 0 5px #00bcd4;
-}
-
-footer .social i:hover {
-    color: #1de9b6;
-    text-shadow: 0 0 8px #1de9b6;
-}
-
-/* Chevron Glow */
-#lead-down i, #to-top i {
-    color: #00bcd4;
-    text-shadow: 0 0 10px #00bcd4;
-}
-
-/* Menu Glow */
-#menu a {
-    color: #00bcd4;
-    text-shadow: 0 0 5px #00bcd4;
-}
-
-#menu a:hover {
-    color: #1de9b6;
-    text-shadow: 0 0 8px #1de9b6;
+    text-shadow: 0 0 4px rgba(0, 140, 255, 0.4);
 }
 
 /* Contact Form */
 #contact-form input,
 #contact-form textarea {
-    background-color: #161b22;
-    color: #e6f1ff;
-    border: 1px solid #00bcd4;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #007bff;
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 15px;
@@ -150,16 +80,29 @@ footer .social i:hover {
 }
 
 #contact-form button {
-    background-color: #00bcd4;
-    color: #0d1117;
+    background-color: #007bff;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
-    box-shadow: 0 0 10px #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.6);
     transition: background 0.3s ease;
 }
 
 #contact-form button:hover {
-    background-color: #1de9b6;
-    box-shadow: 0 0 15px #1de9b6;
+    background-color: #0056b3;
+    box-shadow: 0 0 15px rgba(0, 140, 255, 0.8);
+}
+
+/* Chevron + Social Icons */
+#lead-down i,
+#to-top i,
+footer .social i {
+    color: #007bff;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 0.5);
+}
+
+footer .social i:hover {
+    color: #0056b3;
+    text-shadow: 0 0 8px rgba(0, 140, 255, 0.8);
 }
